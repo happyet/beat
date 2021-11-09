@@ -1,0 +1,148 @@
+/*
+Theme Name: Beat
+Theme URI: https://lms.im/theme/wordpress-theme-baidu-beat.html
+Description: Theme for baidu beat.
+Version: 2.0
+Author: LMS
+Author URI: https://lms.im
+*/
+/*reset*/
+*,html{margin:0;padding:0;box-sizing:border-box;}
+img{border:0;max-width:100%;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;background:#fcfcfd;}
+a{color:#2218dc;text-decoration:none;}
+a:hover{text-decoration:underline;}
+hr{margin-bottom:20px;height:1px;border:0;border-top:1px solid #C4E0EA;}
+img{border:none;max-width:100%;height:auto;}
+table{text-align:center;width:100%;border-spacing:0;border-collapse:collapse;}
+th{text-align:center;font-weight:bold;}
+th,td{padding:5px;border:1px solid #ccc;}
+select{background:#fbfbfb;border:1px solid #C4E0EA;}
+pre{font-size:12px;color:#333;overflow-x:auto;}
+code{font-size:12px;color:#333;}
+.screen-reader-text{display:none;}
+.alignleft{float:left;}
+.alignright{float:right;}
+.aligncenter{display:block;margin-left:auto;margin-right:auto;}
+img.alignright{margin-left:1em}
+img.alignleft{margin-right:1em}
+.red{color:#e01307}
+.blue{color:#2218dc}
+
+h1{font-size:20px;color:#474747;}
+h2{font-size:18px;color:#474747;}
+h3{font-size:16px;color:#474747;}
+
+/*hd*/
+.hd{height:141px;box-shadow:#b7b7b7 0 5px 15px;background:url(images/bg01_02.gif);}
+.hd_ct{width:960px;height:141px;margin:0 auto;background:url(images/bg02_02.gif) 17px no-repeat;}
+.hd_ct a{display:block;height:100px;width:180px;position:relative;top:20px;left:10px;outline:none;}
+.hd_ct a.text-link{font-size:35px;line-height:100px;color:#3E3E3E;}
+
+.con_ct{display:flex;width:960px;margin:0 auto;padding:40px 0;}
+
+/*nav*/
+.nav{width:150px;}
+.nav_ul{position:sticky;top:30px;padding-right:20px;list-style:none;}
+.nav_ul li{text-align:center;font-size:14px;font-weight:bold;margin-bottom:10px;}
+.nav_ul ul{list-style:none;margin-top:10px;}
+.nav_ul a{color:#474747;}
+
+/*mid*/
+.mid{width:580px;}
+.mod{margin:0 20px 40px;padding-bottom:23px;border-bottom:1px dashed #333;}
+.mod .title{position:relative;padding:12px 0;}
+.mod .title::before,.mod .title::after{position:absolute;top:0;content:'';width:30px;height:3px;}
+.mod .title::before{background-color:#e01307;left:0;}
+.mod .title::after{background-color:#2218dc;left:30px;}
+.mod .title h2{font-size:18px;line-height:120%;}
+.mod .title a{color:#3E3E3E;}
+.mod .title p{color:#959595; font-size:12px;}
+.mod .mod_ct{font-size:14px;line-height:1.6;}
+.mod .mod_ct p,.entry ul,.entry ol{margin:1em 0;}
+.entry h1,.entry h2,.entry h3{margin:1.5em 0 1em;}
+.entry ul,.entry ol{padding-left:1.5em}
+.entry ul.blocks-gallery-grid{padding-left:0;}
+.entry pre,.entry blockquote{padding:1em;background:#f1f1f1}
+.entry blockquote p:first-child{margin-top:0;}
+.entry blockquote p:last-child{margin-bottom:0;}
+.entry code{padding:2px 3px;background:#f1f1f1;}
+.entry .arch_ul,.entry .blogroll{overflow:hidden;}
+.entry .arch_ul li,.entry .blogroll li{width:33.3333%;float:left;}
+.entry .arch_ul a,.entry .blogroll a{color:#3E3E3E;}
+.mod .mod_ft{padding:5px 0;}
+.mod .mod_ft .red a{color:#e01307;}
+
+.archive-title{margin:0 20px 30px;padding-bottom:20px;border-bottom:1px dashed #333;}
+.archive-title p{color:#959595;}
+
+/*pagenav*/
+.pagenav{text-align:center;}
+.pagenav .page-numbers{color:#000;padding:5px 8px;}
+.pagenav .page-numbers.current{ color:#e01307;}
+.post-navigation{margin:-20px 20px 30px;padding-bottom:20px;border-bottom:1px dashed #333;}
+.comments-pagination{text-align:center;margin:-20px 0 30px;}
+.post-navigation .nav-links{display:flex;}
+.post-navigation .nav-links a{color:#959595;}
+.post-navigation .nav-links p{color:#3E3E3E;}
+.nav-previous{margin-right:auto;}
+.nav-next{margin-left:auto;text-align:right;}
+
+/*comment*/
+.comments-area{padding:0 20px;}
+.comments-area ol{list-style:none;}
+.comments-area .comments-title,.comment-reply-title{font-size:18px;margin-bottom:20px;}
+.comments-area li{list-style:none;}
+.comments-area li.depth-2{padding-left:30px;}
+.comment-author,.comment-meta{color:#999;line-height:1.6;background:#f1f1f1;}
+.comment-author{padding:5px 5px 0;}
+.comment-meta{padding:0 5px 2px;}
+.comment-author .avatar{float:left;margin-right:10px;}
+.comment-author a{color:#3E3E3E}
+.comment-author cite{font-style:normal;margin-right:5px;}
+.comment-meta,.comment-meta a{color:#999;}
+.comment-body{margin-bottom:20px;}
+.comment-body p{font-size:14px;margin:10px 0;}
+.comment-body .reply{text-align:right;}
+.comment-body .reply a{color:#2218dc;}
+
+.comment-respond textarea{width:100%;}
+.comment-respond textarea,.comment-respond input{font-size:14px;padding:5px 10px;border:1px solid #333;background:#fbfbfb;outline:none;}
+.comment-respond p{margin-bottom:10px;}
+.comment-respond label{display:block;color:#999;}
+.comment-respond p.comment-form-cookies-consent label{display:inline;}
+.comment-respond .submit{color:#fff;background:#e01307;cursor:pointer;}
+
+/*side*/
+.side{width:230px;}
+.side_mod{color:#3E3E3E;margin-bottom:30px;padding-left:20px;}
+.side_mod h3{font-size:14px;color:#474747;padding-bottom:5px;margin-bottom:15px;border-bottom:1px dashed #333;}
+.side ul{padding-left:1.5em;color:#959595}
+.side ul li{margin-bottom:5px;}
+.side_mod a{color:#3E3E3E;}
+.side_mod li.cat-item{width:50%;float:left;}
+
+#searchform{display:flex;}
+#searchform input{width:100%;padding:5px;border:1px solid #ccc;background:#fff;}
+#searchform button{flex-shrink:0;background:url(images/img03_09.gif) transparent 0 50% no-repeat;border:none;width:30px;height:30px;cursor:pointer;}
+
+#wp-calendar caption{text-align:center;margin-bottom:5px;font-size:14px;}
+#wp-calendar td#today{color:#fff;background-color:#e01307;}
+#wp-calendar td a{color:#e01307;}
+.wp-calendar-nav{display:flex;}
+.wp-calendar-nav .wp-calendar-nav-prev{margin-right:auto;}
+.wp-calendar-nav .wp-calendar-nav-next{margin-left:auto;}
+
+.fu table{ width:100%; margin-top:27px;}
+.fu table td{ width:20%; text-align:center;}
+.fu_a{ display:block; width:28px; height:29px; text-indent:-999px; overflow:hidden; margin:0 auto 5px;}
+.fu_01{ background:url(images/fu_01.png) 50% 50% no-repeat;}
+.fu_02{ background:url(images/fu_02.png) 50% 50% no-repeat;}
+.fu_03{ background:url(images/fu_03.png) 50% 50% no-repeat;}
+.fu_04{ background:url(images/fu_04.png) 50% 50% no-repeat;}
+.fu_05{ background:url(images/fu_05.png) 50% 50% no-repeat;}
+.fu table a{ font-size:10px; color:#999; text-decoration:none; font-weight:bold;}
+.fu table a:hover{ color:#000;}
+
+.ft{font-size:13px;line-height:120%;padding:40px 0;text-align:center;font-weight:bold;border-top:1px solid #b7b7b7;box-shadow:#b7b7b7 inset 0 10px 10px -10px}
+.ft a{color: #6B6B6B;}
